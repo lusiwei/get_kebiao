@@ -45,4 +45,5 @@ kb_res=s.get(kburl,headers=kb_headers)
 soup=BeautifulSoup(kb_res.text,"lxml")
 kb=soup.find(id="Table1")
 kb_text=kb.get_text()
+
 print(kb_text)
